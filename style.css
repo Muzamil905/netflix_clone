@@ -1,0 +1,132 @@
+@font-face {
+        font-family:'Rubi' ;
+        src: url(Fonts/Roboto-Bold.ttf)
+    }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
+        url(Image/PK-en-20241223-TRIFECTA-perspective_85ff0c55-7fef-41fd-8447-76e72e8dbaa0_large.jpg);
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 104vh;
+    width: auto;
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6%;
+    background: rgba(0, 0, 0, 1);
+    filter: blur(20px);
+    z-index: 0;
+}
+
+nav {
+    height: 100px;
+    width: 1897px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.logo {
+    height: 108px;
+    margin-right: 290px;
+    margin-top: -13px;
+}
+.sign-btn {
+    height: 32px;
+    width: 76px;
+    background-color: #E50914;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -13px;
+}
+.Info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
+    height: 750px;
+    /* border: #E50914 solid; */
+
+}
+h1{
+    font-family: 'Rubi', sans-serif;
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    width: 650px;
+    margin-bottom: -10px;
+    text-align: center;
+
+}
+h3{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    width:299px ;  
+    text-align: center;
+}
+p{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+#email{
+    height: 52px;
+    width: 434px;
+    background: rgba(18, 18, 18, 0.6);
+    border-top:1px solid rgb(94, 93, 93);
+    border-bottom:1px solid rgb(94, 93, 93);
+    border-left:1px solid rgb(94, 93, 93);
+    border-right:1px solid rgb(94, 93, 93);
+    border-radius: 5px;
+    color: white;
+}
+#email::placeholder{
+    color:rgb(201, 198, 198);
+    font-size: 14px;
+    padding-left: 10px;
+}
+#Submit{
+    background-color:#E50914 ;
+    color: white;
+    height: 52px;
+    width: 208px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    transition: 0.7s ease;    
+    cursor: pointer;
+    margin-left: 10px;
+}
+#Submit:hover{
+    opacity: 0.8;
+}
+#Submit:active {
+    transform: translateY(1px);
+    box-shadow: 5px 5px 10px black;
+    opacity: 0.7;
+    transition: all 0.2 ease-in;
+}
