@@ -63,7 +63,7 @@ nav {
     align-items: center;
     flex-direction: column;
     width: inherit;
-    height: 750px;
+    height: 800px;
     /* border: #E50914 solid; */
 
 }
@@ -129,4 +129,24 @@ p{
     box-shadow: 5px 5px 10px black;
     opacity: 0.7;
     transition: all 0.2 ease-in;
+}
+.arc{
+    height: 100px;
+    width: inherit;
+    border: #E50914 solid;
+    border-top-left-radius: 220% 255px;
+    border-top-right-radius:220% 255px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+.Trending{
+    color: white;
+    display: flex;
+    border: 2px solid red;
+    width: 35%;
+    justify-content: flex-end;
+    align-content: flex-end;
+    height: 10%;
 }
