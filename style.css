@@ -9,7 +9,7 @@ body {
 
 .background-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), 
-        url(Image/PK-en-20241223-TRIFECTA-perspective_85ff0c55-7fef-41fd-8447-76e72e8dbaa0_large.jpg);
+        url(Image/PK-en-20241202-TRIFECTA-perspective_be97acc0-35a1-4c72-be42-a260ef628a68_large.jpg);
     display: flex;
     flex-direction: column;
     background-position: center;
@@ -56,6 +56,7 @@ nav {
     font-size: 13px;
     font-weight: bold;
     margin-top: -13px;
+    cursor: pointer;
 }
 .Info{
     display: flex;
@@ -141,12 +142,198 @@ p{
     border-bottom: none;
     background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
 }
-.Trending{
+.Lower-part{
+    height: auto;
+    width: auto;
+    background-color: black;
+    border: none;
+    padding: 0px 354px ;
+}
+.Trend{
+    font-size: 2rem;
+    font-weight: 700;
     color: white;
+    margin: 0%;
     display: flex;
-    border: 2px solid red;
-    width: 35%;
-    justify-content: flex-end;
-    align-content: flex-end;
-    height: 10%;
+    justify-content: flex-start;
+}
+#Country{
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    padding-right: calc(2.25rem + 0rem);
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    background-color: transparent;
+    color: white;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+#Genre{
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    padding-right: calc(2.25rem + 0rem);
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+option{
+    color: black;
+}
+.Image-Container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    cursor: pointer;
+    padding-bottom: 50px;
+}
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
+.Forward{
+    height: 7.5rem;
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 10%;
+    cursor: pointer;
+}
+.Forward:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 400ms ease-in-out;
+}
+.Forward:active {
+    transform: translateY(1px);
+    box-shadow: 5px 5px 10px black;
+    opacity: 0.7;
+    transition: all 0.2 ease-in;
+}
+.Reasons{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.Card-Containers{
+    display:flex ;
+    justify-content: space-between;
+}
+.First-Card{
+    width: 286.75px;
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(26, 35, 126, 0.3), rgba(142, 36, 170, 0.3));    
+}
+.Second-Card{
+    width: 286.75px;
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(26, 35, 126, 0.3), rgba(142, 36, 170, 0.3));    
+}
+.Third-Card{
+    width: 286.75px;
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(26, 35, 126, 0.3), rgba(142, 36, 170, 0.3));    
+}
+.Forth-Card{
+    width: 286.75px;
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(26, 35, 126, 0.3), rgba(142, 36, 170, 0.3));    
+}
+.Main{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.Sec{
+    display: flex;
+    justify-content: fle;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.Questions{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+.Ans{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(45, 45, 45);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+    cursor: pointer;
+    margin: 0.2em;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.Ans:hover{
+    background-color: rgb(70, 70, 70);
+}
+.Sign-UP{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.us{
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+}
+ul{
+    columns: 100px 4;
+}
+li{
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 10px;
+}
+#Language{
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    padding-right: calc(2.25rem + 0rem);
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    background-color: transparent;
+    color: white;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+.Pakistan{
+    display: flex;
+    margin: 0%;
+    margin-top: 25px;
 }
